@@ -7,3 +7,4 @@ pip install typing
 pip install scikit-image
 pip install huggingface_hub
 pip install "transformers>=4.39.1"
+pip install flask
