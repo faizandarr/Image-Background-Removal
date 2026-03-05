@@ -53,12 +53,12 @@ def index():
 def uploaded_file(filename):
     return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
 
-# Route to serve processed images
+
 @app.route('/output/<filename>')
 def processed_file(filename):
     return send_from_directory(app.config["OUTPUT_FOLDER"], filename)
 
-# Route for downloading processed image
+
 @app.route('/download/<filename>')
 def download(filename):
     return send_from_directory(app.config["OUTPUT_FOLDER"], filename, as_attachment=True)
